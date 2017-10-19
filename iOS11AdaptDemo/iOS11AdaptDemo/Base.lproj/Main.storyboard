@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1367" y="-677"/>
         </scene>
-        <!--Item 1-->
+        <!--View-->
         <scene sceneID="XUk-YX-uDl">
             <objects>
-                <viewController id="fIf-m6-nU4" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="View" id="fIf-m6-nU4" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oLi-Uo-k8L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -63,13 +63,13 @@
                         <viewLayoutGuide key="safeArea" id="5TQ-4a-qyC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="icon_activity" landscapeImage="icon_regiment" selectedImage="icon_activity_press" id="hi7-n5-uco"/>
-                    <navigationItem key="navigationItem" id="uh6-5T-Smt"/>
+                    <navigationItem key="navigationItem" title="Hello" id="uh6-5T-Smt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCw-O8-VAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2101.5999999999999" y="-678.71064467766121"/>
+            <point key="canvasLocation" x="2076" y="-849"/>
         </scene>
-        <!--View Controller One-->
+        <!--Two-->
         <scene sceneID="g0c-9Q-N7D">
             <objects>
                 <viewController id="FSW-8L-xbS" customClass="ViewControllerOne" sceneMemberID="viewController">
@@ -79,7 +79,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="eeb-OW-wr5"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Aoj-Qw-CDM"/>
+                    <navigationItem key="navigationItem" title="Two" id="Aoj-Qw-CDM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tue-P9-Dbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

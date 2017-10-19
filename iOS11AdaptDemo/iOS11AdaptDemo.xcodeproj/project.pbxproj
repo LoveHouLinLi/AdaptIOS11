@@ -15,6 +15,7 @@
 		BF1786ED1F9733B600FF54C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1786EC1F9733B600FF54C5 /* main.m */; };
 		BF1786F41F973A3600FF54C5 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1786F31F973A3600FF54C5 /* images.xcassets */; };
 		BF1786F71F9743EC00FF54C5 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */; };
+		BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		BF1786F31F973A3600FF54C5 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		BF1786F51F9743EC00FF54C5 /* ViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
 		BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		BF4A48E21F9761D5005377F1 /* ItemViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewControllerTwo.h; sourceTree = "<group>"; };
+		BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewControllerTwo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				BF1786DE1F9733B600FF54C5 /* AppDelegate.m */,
 				BF1786E01F9733B600FF54C5 /* ViewController.h */,
 				BF1786E11F9733B600FF54C5 /* ViewController.m */,
+				BF4A48E21F9761D5005377F1 /* ItemViewControllerTwo.h */,
+				BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */,
 				BF1786F51F9743EC00FF54C5 /* ViewControllerOne.h */,
 				BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */,
 				BF1786E31F9733B600FF54C5 /* Main.storyboard */,
@@ -154,6 +159,7 @@
 				BF1786E21F9733B600FF54C5 /* ViewController.m in Sources */,
 				BF1786ED1F9733B600FF54C5 /* main.m in Sources */,
 				BF1786DF1F9733B600FF54C5 /* AppDelegate.m in Sources */,
+				BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */,
 				BF1786F71F9743EC00FF54C5 /* ViewControllerOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self setNaviBarStyle];
+}
+
+#pragma mark ----  设置 导航栏的 样式
+
+/**
+ 设置之后整个
+ */
+- (void)setNaviBarStyle
+{
+    self.navigationController.navigationBar.prefersLargeTitles = true;
 }
 
 
