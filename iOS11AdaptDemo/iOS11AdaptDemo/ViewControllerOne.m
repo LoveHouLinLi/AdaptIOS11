@@ -14,9 +14,14 @@
 
 @implementation ViewControllerOne
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
+    //  这句话 只会影响后面的navi  不会影响前面的
+    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeNever;
+    
 }
 
 - (void)didReceiveMemoryWarning {
