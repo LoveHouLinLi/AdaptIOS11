@@ -20,6 +20,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self setNaviBarStyle];
+    
+    //
 }
 
 #pragma mark ----  设置 导航栏的 样式
