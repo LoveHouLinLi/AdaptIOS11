@@ -126,6 +126,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM1-z7-GYp">
                                 <rect key="frame" x="0.0" y="626" width="375" height="41"/>
+                                <color key="backgroundColor" red="0.36661574209999997" green="0.41455774159999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="6Xn-ph-zCg"/>
                                 </constraints>
@@ -144,7 +145,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tM1-z7-GYp" firstAttribute="top" secondItem="cAM-AG-ZOK" secondAttribute="bottom" id="3RC-RJ-RGv"/>
                             <constraint firstItem="cAM-AG-ZOK" firstAttribute="leading" secondItem="eeb-OW-wr5" secondAttribute="leading" id="6cZ-CV-mDL"/>
@@ -170,17 +171,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6HY-d3-bjE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.36661574209999997" green="0.41455774159999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ueB-X8-MZG">
+                                <rect key="frame" x="20" y="538" width="335" height="60"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="changeAjustContentInset"/>
+                                <connections>
+                                    <action selector="changeAjustContentInsetClick:" destination="qOr-L2-GKk" eventType="touchUpInside" id="Rep-UX-dOU"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.6727925709" blue="0.40392920719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6HY-d3-bjE" firstAttribute="top" secondItem="Jkb-Ri-W6q" secondAttribute="top" id="JFS-4W-QhW"/>
+                            <constraint firstItem="6HY-d3-bjE" firstAttribute="top" secondItem="Jkb-Ri-W6q" secondAttribute="top" constant="-50" id="JFS-4W-QhW"/>
+                            <constraint firstItem="Jkb-Ri-W6q" firstAttribute="trailing" secondItem="ueB-X8-MZG" secondAttribute="trailing" constant="20" id="U2b-Ee-jNc"/>
                             <constraint firstItem="Jkb-Ri-W6q" firstAttribute="trailing" secondItem="6HY-d3-bjE" secondAttribute="trailing" id="X6n-Qb-pfG"/>
-                            <constraint firstItem="Jkb-Ri-W6q" firstAttribute="bottom" secondItem="6HY-d3-bjE" secondAttribute="bottom" id="YO7-Ho-I3e"/>
+                            <constraint firstItem="Jkb-Ri-W6q" firstAttribute="bottom" secondItem="6HY-d3-bjE" secondAttribute="bottom" constant="100" id="YO7-Ho-I3e"/>
                             <constraint firstItem="6HY-d3-bjE" firstAttribute="leading" secondItem="Jkb-Ri-W6q" secondAttribute="leading" id="beL-CY-aPW"/>
+                            <constraint firstItem="ueB-X8-MZG" firstAttribute="top" secondItem="6HY-d3-bjE" secondAttribute="bottom" constant="20" id="bg1-UX-R52"/>
+                            <constraint firstItem="Jkb-Ri-W6q" firstAttribute="bottom" secondItem="ueB-X8-MZG" secondAttribute="bottom" constant="20" id="mJj-jo-bzD"/>
+                            <constraint firstItem="ueB-X8-MZG" firstAttribute="leading" secondItem="Jkb-Ri-W6q" secondAttribute="leading" constant="20" id="zW9-30-wv5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jkb-Ri-W6q"/>
                     </view>

@@ -5,12 +5,15 @@
 //  Created by DeLongYang on 2017/10/19.
 //  Copyright © 2017年 DeLongYang. All rights reserved.
 /*
-    是为了验证 在iOS11 上 UITableView  和 UIScrollView  是否会出现滑动的现象
+    1.0 是为了验证 在iOS11 上 UITableView  和 UIScrollView  是否会出现滑动的现象
+    2.0 autoLayout 上出现选择 safeArea 和 边界的多个选项
+    3.0 我们实验
  */
 
 #import "ViewControllerThree.h"
 #import "TableViewCell.h"
 #import "Mode.h"
+#import "TestXibViewController.h"
 
 @interface ViewControllerThree ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -29,12 +32,27 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    for (int i = 0;i<30; i++)
-    {
-        Mode *mode = [[Mode alloc] init];
-        [self.dataSource addObject:mode];
-    }
+//    for (int i = 0;i<30; i++)
+//    {
+//        Mode *mode = [[Mode alloc] init];
+//        [self.dataSource addObject:mode];
+//    }
     
+    /*
+       为了验证 在iOS11 上是否会出现这些所谓的问题 我们先加载一个tableview 试试
+     */
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
+    [self.tableView registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:nil] forCellReuseIdentifier:@"xibCell"];
+    
+    UIEdgeInsets insets = self.tableView.contentInset;
+    NSLog(@"tableview insets is %@",NSStringFromUIEdgeInsets(insets));
+    UIEdgeInsets safeAreaInsets = self.view.safeAreaInsets;
+     NSLog(@"view safeArea insets is %@",NSStringFromUIEdgeInsets(safeAreaInsets));
+    //
+    UIEdgeInsets addtionalSafeAreaInsets = self.additionalSafeAreaInsets;
+    NSLog(@"addtional safe area insets is %@",NSStringFromUIEdgeInsets(addtionalSafeAreaInsets));
     
 }
 
@@ -63,14 +81,30 @@
 -  (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //  我们标记 第一行的
-    return  nil;
+    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"xibCell"];
+//    NSInteger row = indexPath.row;
+//    if (row<[self.dataSource count]) {
+//        Mode *mode = self.dataSource[row];
+//    }
+    
+    if (indexPath.row == 0) {
+        cell.nameLable.textColor = [UIColor redColor];
+    }else{
+        cell.nameLable.textColor = [UIColor blackColor];
+    }
+    
+    return  cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  self.dataSource.count;
+    return  30;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 70;
+}
 
 #pragma mark ----  UITableView Delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -79,7 +113,15 @@
 }
 
 
-
+#pragma mark ---- 点击改变 安全区域 点击
+- (IBAction)changeAjustContentInsetClick:(id)sender
+{
+    // tableView 的adjustedContent 是只读属性
+//    self.tableView.adjustedContentInset = UIEdgeInsetsMake(0, 50, 0, 0);
+    TestXibViewController *tesxXibVC = [[TestXibViewController alloc] initWithNibName:@"TestXibViewController" bundle:nil];
+    [self.navigationController pushViewController:tesxXibVC animated:YES];
+    
+}
 
 
 
