@@ -41,7 +41,7 @@
 
 #pragma mark ---- UISearchBarController Delegate
 /*
-   但是效果不太 理想 
+   但是效果不太 理想  不建议使用
  */
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

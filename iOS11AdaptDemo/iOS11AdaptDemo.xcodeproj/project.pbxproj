@@ -15,7 +15,11 @@
 		BF1786ED1F9733B600FF54C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1786EC1F9733B600FF54C5 /* main.m */; };
 		BF1786F41F973A3600FF54C5 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1786F31F973A3600FF54C5 /* images.xcassets */; };
 		BF1786F71F9743EC00FF54C5 /* ViewControllerOne.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */; };
+		BF218BBF1F998004009A42B2 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF218BBD1F998004009A42B2 /* TableViewCell.m */; };
+		BF218BC01F998004009A42B2 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF218BBE1F998004009A42B2 /* TableViewCell.xib */; };
+		BF218BC41F9980AB009A42B2 /* Mode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF218BC31F9980AB009A42B2 /* Mode.m */; };
 		BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */; };
+		BF4A48E71F9875D7005377F1 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A48E61F9875D7005377F1 /* ViewControllerThree.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +36,15 @@
 		BF1786F31F973A3600FF54C5 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		BF1786F51F9743EC00FF54C5 /* ViewControllerOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerOne.h; sourceTree = "<group>"; };
 		BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerOne.m; sourceTree = "<group>"; };
+		BF218BBC1F998004009A42B2 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		BF218BBD1F998004009A42B2 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		BF218BBE1F998004009A42B2 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		BF218BC21F9980AB009A42B2 /* Mode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mode.h; sourceTree = "<group>"; };
+		BF218BC31F9980AB009A42B2 /* Mode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mode.m; sourceTree = "<group>"; };
 		BF4A48E21F9761D5005377F1 /* ItemViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewControllerTwo.h; sourceTree = "<group>"; };
 		BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewControllerTwo.m; sourceTree = "<group>"; };
+		BF4A48E51F9875D7005377F1 /* ViewControllerThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
+		BF4A48E61F9875D7005377F1 /* ViewControllerThree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerThree.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +83,12 @@
 				BF1786E11F9733B600FF54C5 /* ViewController.m */,
 				BF1786F51F9743EC00FF54C5 /* ViewControllerOne.h */,
 				BF1786F61F9743EC00FF54C5 /* ViewControllerOne.m */,
+				BF4A48E51F9875D7005377F1 /* ViewControllerThree.h */,
+				BF4A48E61F9875D7005377F1 /* ViewControllerThree.m */,
 				BF4A48E21F9761D5005377F1 /* ItemViewControllerTwo.h */,
 				BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */,
+				BF218BC51F9980B2009A42B2 /* Modes */,
+				BF218BC11F99802C009A42B2 /* Views */,
 				BF1786E31F9733B600FF54C5 /* Main.storyboard */,
 				BF1786F31F973A3600FF54C5 /* images.xcassets */,
 				BF1786E61F9733B600FF54C5 /* Assets.xcassets */,
@@ -82,6 +97,25 @@
 				BF1786EC1F9733B600FF54C5 /* main.m */,
 			);
 			path = iOS11AdaptDemo;
+			sourceTree = "<group>";
+		};
+		BF218BC11F99802C009A42B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF218BBC1F998004009A42B2 /* TableViewCell.h */,
+				BF218BBD1F998004009A42B2 /* TableViewCell.m */,
+				BF218BBE1F998004009A42B2 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF218BC51F9980B2009A42B2 /* Modes */ = {
+			isa = PBXGroup;
+			children = (
+				BF218BC21F9980AB009A42B2 /* Mode.h */,
+				BF218BC31F9980AB009A42B2 /* Mode.m */,
+			);
+			path = Modes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1786EA1F9733B600FF54C5 /* LaunchScreen.storyboard in Resources */,
+				BF218BC01F998004009A42B2 /* TableViewCell.xib in Resources */,
 				BF1786F41F973A3600FF54C5 /* images.xcassets in Resources */,
 				BF1786E71F9733B600FF54C5 /* Assets.xcassets in Resources */,
 				BF1786E51F9733B600FF54C5 /* Main.storyboard in Resources */,
@@ -156,10 +191,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF218BBF1F998004009A42B2 /* TableViewCell.m in Sources */,
 				BF1786E21F9733B600FF54C5 /* ViewController.m in Sources */,
 				BF1786ED1F9733B600FF54C5 /* main.m in Sources */,
 				BF1786DF1F9733B600FF54C5 /* AppDelegate.m in Sources */,
+				BF4A48E71F9875D7005377F1 /* ViewControllerThree.m in Sources */,
 				BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */,
+				BF218BC41F9980AB009A42B2 /* Mode.m in Sources */,
 				BF1786F71F9743EC00FF54C5 /* ViewControllerOne.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
