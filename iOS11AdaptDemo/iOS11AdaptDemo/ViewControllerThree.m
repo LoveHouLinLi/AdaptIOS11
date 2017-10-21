@@ -46,13 +46,8 @@
     
     [self.tableView registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:nil] forCellReuseIdentifier:@"xibCell"];
     
-    UIEdgeInsets insets = self.tableView.contentInset;
-    NSLog(@"tableview insets is %@",NSStringFromUIEdgeInsets(insets));
-    UIEdgeInsets safeAreaInsets = self.view.safeAreaInsets;
-     NSLog(@"view safeArea insets is %@",NSStringFromUIEdgeInsets(safeAreaInsets));
     //
-    UIEdgeInsets addtionalSafeAreaInsets = self.additionalSafeAreaInsets;
-    NSLog(@"addtional safe area insets is %@",NSStringFromUIEdgeInsets(addtionalSafeAreaInsets));
+    [self printInsets];
     
 }
 
@@ -165,6 +160,19 @@
     
     
 }
+
+#pragma mark ----  打印 insets
+- (void)printInsets
+{
+    UIEdgeInsets insets = self.tableView.contentInset;
+    NSLog(@"tableview insets is %@",NSStringFromUIEdgeInsets(insets));
+    UIEdgeInsets safeAreaInsets = self.view.safeAreaInsets;
+    NSLog(@"view safeArea insets is %@",NSStringFromUIEdgeInsets(safeAreaInsets));
+    //
+    UIEdgeInsets addtionalSafeAreaInsets = self.additionalSafeAreaInsets;
+    NSLog(@"addtional safe area insets is %@",NSStringFromUIEdgeInsets(addtionalSafeAreaInsets));
+}
+
 
 
 

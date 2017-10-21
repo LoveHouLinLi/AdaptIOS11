@@ -20,6 +20,7 @@
 		BF218BC41F9980AB009A42B2 /* Mode.m in Sources */ = {isa = PBXBuildFile; fileRef = BF218BC31F9980AB009A42B2 /* Mode.m */; };
 		BF218BC91F99DE3A009A42B2 /* TestXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF218BC71F99DE3A009A42B2 /* TestXibViewController.m */; };
 		BF218BCA1F99DE3A009A42B2 /* TestXibViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF218BC81F99DE3A009A42B2 /* TestXibViewController.xib */; };
+		BF218BCD1F9B0D78009A42B2 /* TBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF218BCC1F9B0D78009A42B2 /* TBViewController.m */; };
 		BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */; };
 		BF4A48E71F9875D7005377F1 /* ViewControllerThree.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4A48E61F9875D7005377F1 /* ViewControllerThree.m */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,8 @@
 		BF218BC61F99DE3A009A42B2 /* TestXibViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestXibViewController.h; sourceTree = "<group>"; };
 		BF218BC71F99DE3A009A42B2 /* TestXibViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestXibViewController.m; sourceTree = "<group>"; };
 		BF218BC81F99DE3A009A42B2 /* TestXibViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestXibViewController.xib; sourceTree = "<group>"; };
+		BF218BCB1F9B0D78009A42B2 /* TBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBViewController.h; sourceTree = "<group>"; };
+		BF218BCC1F9B0D78009A42B2 /* TBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBViewController.m; sourceTree = "<group>"; };
 		BF4A48E21F9761D5005377F1 /* ItemViewControllerTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ItemViewControllerTwo.h; sourceTree = "<group>"; };
 		BF4A48E31F9761D5005377F1 /* ItemViewControllerTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ItemViewControllerTwo.m; sourceTree = "<group>"; };
 		BF4A48E51F9875D7005377F1 /* ViewControllerThree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerThree.h; sourceTree = "<group>"; };
@@ -95,6 +98,8 @@
 				BF218BC61F99DE3A009A42B2 /* TestXibViewController.h */,
 				BF218BC71F99DE3A009A42B2 /* TestXibViewController.m */,
 				BF218BC81F99DE3A009A42B2 /* TestXibViewController.xib */,
+				BF218BCB1F9B0D78009A42B2 /* TBViewController.h */,
+				BF218BCC1F9B0D78009A42B2 /* TBViewController.m */,
 				BF218BC51F9980B2009A42B2 /* Modes */,
 				BF218BC11F99802C009A42B2 /* Views */,
 				BF1786E31F9733B600FF54C5 /* Main.storyboard */,
@@ -206,6 +211,7 @@
 				BF1786DF1F9733B600FF54C5 /* AppDelegate.m in Sources */,
 				BF4A48E71F9875D7005377F1 /* ViewControllerThree.m in Sources */,
 				BF4A48E41F9761D5005377F1 /* ItemViewControllerTwo.m in Sources */,
+				BF218BCD1F9B0D78009A42B2 /* TBViewController.m in Sources */,
 				BF218BC91F99DE3A009A42B2 /* TestXibViewController.m in Sources */,
 				BF218BC41F9980AB009A42B2 /* Mode.m in Sources */,
 				BF1786F71F9743EC00FF54C5 /* ViewControllerOne.m in Sources */,

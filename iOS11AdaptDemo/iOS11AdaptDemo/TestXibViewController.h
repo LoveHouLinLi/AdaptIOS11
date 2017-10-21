@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TBViewController.h"   // 我们测试能在 XIB 中直接 加控件的样式
 
-@interface TestXibViewController : UIViewController
+@interface TestXibViewController : TBViewController
 
 @end
