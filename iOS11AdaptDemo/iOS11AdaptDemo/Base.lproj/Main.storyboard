@@ -4,7 +4,9 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,6 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="lab-ch-0fT"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="g1N-jr-NBg"/>
                     <navigationItem key="navigationItem" id="OA3-hE-pEF"/>
@@ -84,6 +87,7 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="HnU-Hi-L9p"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" image="icon_activity" landscapeImage="icon_regiment" selectedImage="icon_activity_press" id="hi7-n5-uco"/>
                     <navigationItem key="navigationItem" title="Hello" id="uh6-5T-Smt"/>
@@ -151,6 +155,7 @@
                             <constraint firstAttribute="trailing" secondItem="cAM-AG-ZOK" secondAttribute="trailing" id="cvV-eT-EbC"/>
                             <constraint firstAttribute="trailing" secondItem="tM1-z7-GYp" secondAttribute="trailing" id="fQG-y6-Bli"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="T1G-sW-g3u"/>
                     </view>
                     <navigationItem key="navigationItem" title="Two" id="Aoj-Qw-CDM"/>
                 </viewController>
@@ -167,7 +172,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6HY-d3-bjE">
-                                <rect key="frame" x="0.0" y="-50" width="375" height="617"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="503"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="0.36661574209999997" green="0.41455774159999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
@@ -182,7 +187,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6727925709" blue="0.40392920719999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6HY-d3-bjE" firstAttribute="top" secondItem="f54-V2-xvg" secondAttribute="top" constant="-50" id="JFS-4W-QhW"/>
+                            <constraint firstItem="6HY-d3-bjE" firstAttribute="top" secondItem="f54-V2-xvg" secondAttribute="top" constant="64" id="JFS-4W-QhW"/>
                             <constraint firstAttribute="trailing" secondItem="ueB-X8-MZG" secondAttribute="trailing" constant="20" id="U2b-Ee-jNc"/>
                             <constraint firstAttribute="trailing" secondItem="6HY-d3-bjE" secondAttribute="trailing" id="X6n-Qb-pfG"/>
                             <constraint firstAttribute="bottom" secondItem="6HY-d3-bjE" secondAttribute="bottom" constant="100" id="YO7-Ho-I3e"/>
@@ -191,6 +196,7 @@
                             <constraint firstAttribute="bottom" secondItem="ueB-X8-MZG" secondAttribute="bottom" constant="20" id="mJj-jo-bzD"/>
                             <constraint firstItem="ueB-X8-MZG" firstAttribute="leading" secondItem="f54-V2-xvg" secondAttribute="leading" constant="20" id="zW9-30-wv5"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="RbJ-mo-hRY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Three" id="3ra-iu-GEg"/>
                     <connections>

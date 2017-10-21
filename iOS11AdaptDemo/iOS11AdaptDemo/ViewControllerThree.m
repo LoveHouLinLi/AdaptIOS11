@@ -32,11 +32,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    for (int i = 0;i<30; i++)
-//    {
-//        Mode *mode = [[Mode alloc] init];
-//        [self.dataSource addObject:mode];
-//    }
+    for (int i = 0;i<30; i++)
+    {
+        Mode *mode = [[Mode alloc] init];
+        [self.dataSource addObject:mode];
+    }
     
     /*
        为了验证 在iOS11 上是否会出现这些所谓的问题 我们先加载一个tableview 试试
@@ -98,12 +98,12 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return  30;
+    return  self.dataSource.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 70;
+    return 100;
 }
 
 #pragma mark ----  UITableView Delegate
@@ -122,6 +122,53 @@
     [self.navigationController pushViewController:tesxXibVC animated:YES];
     
 }
+
+#pragma mark ---- iOS11 新增tableView UISwipe 动作
+- (UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    //删除
+    if (@available(iOS 11.0, *)) {
+        
+        //
+        /*
+          这有个问题是 设置进去的图片都变成了白色
+          然后就是 icon 和 name 都靠近顶部。
+         */
+        UIContextualAction *deleteRowAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:@"delete" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+            
+//            [self.titleArr removeObjectAtIndex:indexPath.row];
+            [self.dataSource removeObjectAtIndex:indexPath.row];
+            [self.tableView reloadData];
+            completionHandler (YES);
+        }];
+        deleteRowAction.image = [UIImage imageNamed:@"icon_activity_press"];
+        deleteRowAction.backgroundColor = [UIColor redColor];
+        
+        
+        UIContextualAction *collectAction = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleNormal title:@"collect" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+           
+            //
+            NSLog(@"collect indexPath row %ld",indexPath.row);
+            
+            completionHandler(YES);
+        }];
+        collectAction.image = [UIImage imageNamed:@"icon_regiment_press"];
+        collectAction.backgroundColor = [UIColor brownColor];
+        
+        
+        UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[deleteRowAction,collectAction]];
+        return config;
+    } else {
+        // Fallback on earlier versions
+        return nil;
+    }
+    
+    
+}
+
+
+
+
 
 
 
